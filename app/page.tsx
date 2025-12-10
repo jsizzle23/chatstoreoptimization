@@ -102,10 +102,10 @@ export default function Home() {
                 <span>ASO + SEO + GEO Strategies</span>
               </div>
 
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-serif leading-tight">
-                Master <span className="text-blue-600">Search</span> Optimization
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-display leading-[1.1] tracking-tight">
+                Master <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">Search</span> Optimization
                 <br />
-                Across <span className="text-blue-600">Every</span> Platform
+                Across <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">Every</span> Platform
               </h1>
 
               <p className="text-xl text-muted-foreground max-w-lg">
@@ -113,7 +113,7 @@ export default function Home() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="text-base h-12 px-8 bg-blue-600 hover:bg-blue-700" asChild>
+                <Button size="lg" className="text-base h-14 px-10 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/30 transition-all duration-200 hover:-translate-y-0.5" asChild>
                   <Link href="/articles">
                     Start Learning Free
                     <ArrowRight className="ml-2 h-5 w-5" />
@@ -180,7 +180,7 @@ export default function Home() {
       <section className="py-16 sm:py-24">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold font-serif mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold font-display mb-4">
               Three Pillars of Discovery
             </h2>
             <p className="text-muted-foreground text-lg">
@@ -209,7 +209,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
             <div>
-              <h2 className="text-3xl sm:text-4xl font-bold font-serif mb-2">
+              <h2 className="text-3xl sm:text-4xl font-bold font-display mb-2">
                 Featured Guides
               </h2>
               <p className="text-muted-foreground">
@@ -263,7 +263,7 @@ export default function Home() {
       <section className="py-16 sm:py-24">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto mb-12">
-            <h2 className="text-3xl sm:text-4xl font-bold font-serif mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold font-display mb-4">
               What You&apos;ll Learn
             </h2>
             <p className="text-muted-foreground text-lg">
@@ -291,7 +291,7 @@ export default function Home() {
       <section className="py-16 sm:py-24 bg-blue-600 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl sm:text-4xl font-bold font-serif mb-6">
+            <h2 className="text-3xl sm:text-4xl font-bold font-display mb-6">
               Ready to Get Discovered?
             </h2>
             <p className="text-xl mb-8 text-white/90">

@@ -1,6 +1,6 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter, Merriweather } from 'next/font/google';
+import { Inter, Space_Grotesk } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
 import Header from '@/components/layout/header';
 import Footer from '@/components/layout/footer';
@@ -10,10 +10,10 @@ const inter = Inter({
   variable: '--font-inter',
 });
 
-const merriweather = Merriweather({
+const spaceGrotesk = Space_Grotesk({
   subsets: ['latin'],
-  weight: ['300', '400', '700', '900'],
-  variable: '--font-merriweather',
+  weight: ['400', '500', '600', '700'],
+  variable: '--font-space-grotesk',
 });
 
 export const metadata: Metadata = {
@@ -89,7 +89,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${inter.variable} ${merriweather.variable} min-h-screen flex flex-col`}>
+      <body className={`${inter.variable} ${spaceGrotesk.variable} min-h-screen flex flex-col antialiased`}>
         <ThemeProvider>
           <div className="flex-1">
             <Header />

@@ -11,7 +11,7 @@ const config: Config = {
     extend: {
       fontFamily: {
         sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
-        serif: ['var(--font-merriweather)', 'Georgia', 'serif'],
+        display: ['var(--font-space-grotesk)', 'var(--font-inter)', 'system-ui', 'sans-serif'],
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

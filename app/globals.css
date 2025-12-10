@@ -2,141 +2,83 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 /*
  * ==========================================================================
- * MAKE MONEY SAVE TIME - Brand Design System
+ * CHAT STORE OPTIMIZATION - Premium Design System
  * ==========================================================================
  *
- * TYPOGRAPHY SYSTEM
- * ==========================================================================
- *
- * PRIMARY FONTS
- * ------------------------------------------------
- * Sans-serif:  Inter (Google Fonts)
- *              Clean, modern, highly readable
- *              Use for: Body text, navigation, buttons, labels
- *              CSS: font-sans or default body text
- *
- * Serif:       Merriweather (Google Fonts)
- *              Traditional, trustworthy, authoritative
- *              Use for: Headlines, article titles, brand name
- *              CSS: font-serif
- *
- * FONT WEIGHTS AVAILABLE
- * ------------------------------------------------
- * Inter:       400 (regular), 500 (medium), 600 (semibold), 700 (bold)
- * Merriweather: 300 (light), 400 (regular), 700 (bold), 900 (black)
- *
- * USAGE GUIDELINES
- * ------------------------------------------------
- * - Use font-serif for all major headings (h1, h2)
- * - Use font-sans (default) for body text and UI elements
- * - Maintain consistent weight hierarchy:
- *   - H1: font-bold font-serif
- *   - H2: font-bold font-serif
- *   - H3: font-semibold
- *   - Body: font-normal
- *   - Labels: font-medium text-sm
- *
- * ==========================================================================
- *
- * COLOR PALETTE (Option D - Charcoal + Emerald)
- * ==========================================================================
- *
- * PRIMARY COLORS
- * ------------------------------------------------
- * Primary:     Charcoal (#374151) - HSL 220 13% 26%
- *              Professional, trustworthy, sophisticated
- *              Use for: Headers, primary buttons, key text
- *
- * Secondary:   Emerald (#059669) - HSL 160 96% 30%
- *              Success, growth, money, action
- *              Use for: CTAs, success states, accents, links
- *
- * SUPPORTING COLORS
- * ------------------------------------------------
- * Background:  Off-white with subtle warm tint (#fafaf9)
- * Foreground:  Dark charcoal for readability (#1f2937)
- * Muted:       Light gray for subtle backgrounds (#f3f4f6)
- * Border:      Soft gray (#e5e7eb)
- *
- * USAGE GUIDELINES
- * ------------------------------------------------
- * - Primary (charcoal) for authoritative elements
- * - Secondary (emerald) sparingly for CTAs and success
- * - Maintain high contrast for accessibility
- * - Dark mode inverts appropriately
+ * TYPOGRAPHY: Inter (body) + Space Grotesk (headlines)
+ * COLOR: Electric Blue - Trust, Technology, Innovation
+ * STYLE: Modern SaaS, Clean, High-Converting
  *
  * ==========================================================================
  */
 
 @layer base {
   :root {
-    --background: 40 20% 98%;
-    --foreground: 220 20% 14%;
+    /* Premium Blue Theme - Trust & Technology */
+    --background: 220 20% 99%;
+    --foreground: 222 47% 11%;
     --card: 0 0% 100%;
-    --card-foreground: 220 20% 14%;
+    --card-foreground: 222 47% 11%;
     --popover: 0 0% 100%;
-    --popover-foreground: 220 20% 14%;
-    --primary: 220 13% 26%;
+    --popover-foreground: 222 47% 11%;
+
+    /* Primary: Electric Blue */
+    --primary: 217 91% 60%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 160 96% 30%;
+
+    /* Secondary: Deep Blue */
+    --secondary: 221 83% 53%;
     --secondary-foreground: 0 0% 100%;
+
+    /* Accent: Cyan for highlights */
+    --accent: 199 89% 48%;
+    --accent-foreground: 0 0% 100%;
+
     --muted: 220 14% 96%;
     --muted-foreground: 220 9% 46%;
-    --accent: 160 30% 94%;
-    --accent-foreground: 160 96% 25%;
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
     --border: 220 13% 91%;
     --input: 220 13% 91%;
-    --ring: 160 96% 30%;
-    --chart-1: 220 13% 26%;
-    --chart-2: 160 96% 30%;
-    --chart-3: 200 80% 40%;
-    --chart-4: 160 60% 45%;
-    --chart-5: 220 30% 50%;
-    --radius: 0.5rem;
+    --ring: 217 91% 60%;
+
+    /* Chart colors */
+    --chart-1: 217 91% 60%;
+    --chart-2: 221 83% 53%;
+    --chart-3: 199 89% 48%;
+    --chart-4: 172 66% 50%;
+    --chart-5: 262 83% 58%;
+
+    --radius: 0.75rem;
   }
+
   .dark {
-    --background: 220 20% 7%;
-    --foreground: 40 20% 98%;
-    --card: 220 20% 10%;
-    --card-foreground: 40 20% 98%;
-    --popover: 220 20% 10%;
-    --popover-foreground: 40 20% 98%;
-    --primary: 220 13% 75%;
-    --primary-foreground: 220 20% 7%;
-    --secondary: 160 84% 45%;
-    --secondary-foreground: 220 20% 7%;
-    --muted: 220 15% 15%;
+    --background: 222 47% 6%;
+    --foreground: 220 20% 98%;
+    --card: 222 47% 8%;
+    --card-foreground: 220 20% 98%;
+    --popover: 222 47% 8%;
+    --popover-foreground: 220 20% 98%;
+    --primary: 217 91% 65%;
+    --primary-foreground: 222 47% 6%;
+    --secondary: 221 83% 58%;
+    --secondary-foreground: 222 47% 6%;
+    --accent: 199 89% 55%;
+    --accent-foreground: 222 47% 6%;
+    --muted: 222 47% 12%;
     --muted-foreground: 220 10% 65%;
-    --accent: 160 30% 15%;
-    --accent-foreground: 160 84% 60%;
     --destructive: 0 62% 50%;
     --destructive-foreground: 0 0% 98%;
-    --border: 220 15% 18%;
-    --input: 220 15% 18%;
-    --ring: 160 84% 45%;
-    --chart-1: 220 13% 75%;
-    --chart-2: 160 84% 45%;
-    --chart-3: 200 70% 50%;
-    --chart-4: 160 50% 55%;
-    --chart-5: 220 40% 60%;
+    --border: 222 47% 15%;
+    --input: 222 47% 15%;
+    --ring: 217 91% 65%;
+    --chart-1: 217 91% 65%;
+    --chart-2: 221 83% 58%;
+    --chart-3: 199 89% 55%;
+    --chart-4: 172 66% 55%;
+    --chart-5: 262 83% 63%;
   }
 }
 
@@ -144,10 +86,138 @@
   * {
     @apply border-border;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply bg-background text-foreground font-sans;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
-  h1, h2 {
-    @apply font-serif;
+
+  /* Premium Headlines with Space Grotesk */
+  h1, h2, h3 {
+    @apply font-display tracking-tight;
+  }
+
+  h1 {
+    @apply text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.1];
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl font-bold leading-tight;
+  }
+
+  h3 {
+    @apply text-xl sm:text-2xl font-semibold;
+  }
+}
+
+@layer components {
+  /* Premium gradient backgrounds */
+  .gradient-hero {
+    @apply bg-gradient-to-br from-blue-600/5 via-background to-cyan-500/5;
+  }
+
+  .gradient-card {
+    @apply bg-gradient-to-br from-white to-blue-50/50 dark:from-slate-900 dark:to-blue-950/30;
+  }
+
+  /* Glassmorphism effect */
+  .glass {
+    @apply bg-white/80 dark:bg-slate-900/80 backdrop-blur-xl border border-white/20;
+  }
+
+  /* Premium button styles */
+  .btn-primary {
+    @apply bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600
+           text-white font-medium shadow-lg shadow-blue-500/25
+           transition-all duration-200 hover:shadow-xl hover:shadow-blue-500/30
+           hover:-translate-y-0.5;
+  }
+
+  .btn-secondary {
+    @apply bg-gradient-to-r from-slate-800 to-slate-700 hover:from-slate-900 hover:to-slate-800
+           text-white font-medium shadow-lg shadow-slate-500/15
+           transition-all duration-200 hover:shadow-xl hover:-translate-y-0.5;
+  }
+
+  /* Animated underline for links */
+  .link-hover {
+    @apply relative;
+  }
+
+  .link-hover::after {
+    @apply content-[''] absolute bottom-0 left-0 w-0 h-0.5 bg-blue-600
+           transition-all duration-300;
+  }
+
+  .link-hover:hover::after {
+    @apply w-full;
+  }
+
+  /* Card hover effects */
+  .card-hover {
+    @apply transition-all duration-300 hover:shadow-xl hover:-translate-y-1
+           hover:border-blue-200 dark:hover:border-blue-800;
+  }
+
+  /* Floating animation */
+  .float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  /* Glow effect */
+  .glow {
+    @apply shadow-lg shadow-blue-500/20;
+  }
+
+  .glow-hover:hover {
+    @apply shadow-xl shadow-blue-500/30;
+  }
+
+  /* Text gradient */
+  .text-gradient {
+    @apply bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent;
+  }
+
+  /* Section spacing */
+  .section {
+    @apply py-16 sm:py-24 lg:py-32;
+  }
+
+  /* Container max widths */
+  .container-tight {
+    @apply max-w-4xl mx-auto px-4 sm:px-6;
+  }
+
+  .container-wide {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+@layer utilities {
+  /* Hide scrollbar but keep functionality */
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Improved focus states */
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2;
   }
 }

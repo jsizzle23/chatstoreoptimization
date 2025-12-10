@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+/*
+ * ==========================================================================
+ * MAKE MONEY SAVE TIME - Brand Design System
+ * ==========================================================================
+ *
+ * TYPOGRAPHY SYSTEM
+ * ==========================================================================
+ *
+ * PRIMARY FONTS
+ * ------------------------------------------------
+ * Sans-serif:  Inter (Google Fonts)
+ *              Clean, modern, highly readable
+ *              Use for: Body text, navigation, buttons, labels
+ *              CSS: font-sans or default body text
+ *
+ * Serif:       Merriweather (Google Fonts)
+ *              Traditional, trustworthy, authoritative
+ *              Use for: Headlines, article titles, brand name
+ *              CSS: font-serif
+ *
+ * FONT WEIGHTS AVAILABLE
+ * ------------------------------------------------
+ * Inter:       400 (regular), 500 (medium), 600 (semibold), 700 (bold)
+ * Merriweather: 300 (light), 400 (regular), 700 (bold), 900 (black)
+ *
+ * USAGE GUIDELINES
+ * ------------------------------------------------
+ * - Use font-serif for all major headings (h1, h2)
+ * - Use font-sans (default) for body text and UI elements
+ * - Maintain consistent weight hierarchy:
+ *   - H1: font-bold font-serif
+ *   - H2: font-bold font-serif
+ *   - H3: font-semibold
+ *   - Body: font-normal
+ *   - Labels: font-medium text-sm
+ *
+ * ==========================================================================
+ *
+ * COLOR PALETTE (Option D - Charcoal + Emerald)
+ * ==========================================================================
+ *
+ * PRIMARY COLORS
+ * ------------------------------------------------
+ * Primary:     Charcoal (#374151) - HSL 220 13% 26%
+ *              Professional, trustworthy, sophisticated
+ *              Use for: Headers, primary buttons, key text
+ *
+ * Secondary:   Emerald (#059669) - HSL 160 96% 30%
+ *              Success, growth, money, action
+ *              Use for: CTAs, success states, accents, links
+ *
+ * SUPPORTING COLORS
+ * ------------------------------------------------
+ * Background:  Off-white with subtle warm tint (#fafaf9)
+ * Foreground:  Dark charcoal for readability (#1f2937)
+ * Muted:       Light gray for subtle backgrounds (#f3f4f6)
+ * Border:      Soft gray (#e5e7eb)
+ *
+ * USAGE GUIDELINES
+ * ------------------------------------------------
+ * - Primary (charcoal) for authoritative elements
+ * - Secondary (emerald) sparingly for CTAs and success
+ * - Maintain high contrast for accessibility
+ * - Dark mode inverts appropriately
+ *
+ * ==========================================================================
+ */
+
+@layer base {
+  :root {
+    --background: 40 20% 98%;
+    --foreground: 220 20% 14%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 14%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 14%;
+    --primary: 220 13% 26%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 160 96% 30%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+    --accent: 160 30% 94%;
+    --accent-foreground: 160 96% 25%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 160 96% 30%;
+    --chart-1: 220 13% 26%;
+    --chart-2: 160 96% 30%;
+    --chart-3: 200 80% 40%;
+    --chart-4: 160 60% 45%;
+    --chart-5: 220 30% 50%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 220 20% 7%;
+    --foreground: 40 20% 98%;
+    --card: 220 20% 10%;
+    --card-foreground: 40 20% 98%;
+    --popover: 220 20% 10%;
+    --popover-foreground: 40 20% 98%;
+    --primary: 220 13% 75%;
+    --primary-foreground: 220 20% 7%;
+    --secondary: 160 84% 45%;
+    --secondary-foreground: 220 20% 7%;
+    --muted: 220 15% 15%;
+    --muted-foreground: 220 10% 65%;
+    --accent: 160 30% 15%;
+    --accent-foreground: 160 84% 60%;
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 220 15% 18%;
+    --input: 220 15% 18%;
+    --ring: 160 84% 45%;
+    --chart-1: 220 13% 75%;
+    --chart-2: 160 84% 45%;
+    --chart-3: 200 70% 50%;
+    --chart-4: 160 50% 55%;
+    --chart-5: 220 40% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+  h1, h2 {
+    @apply font-serif;
+  }
+}

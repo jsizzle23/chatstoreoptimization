@@ -5,51 +5,51 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Clock } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
-// Sample data (would come from CMS/API in a real app)
+// Featured articles for Chat Store Optimization
 const featuredArticles = [
   {
     id: 1,
-    title: 'How to Earn Passive Income Through Computational Resources',
-    excerpt: 'Learn how to generate steady income by leveraging your computing power and contributing to distributed networks.',
-    category: 'Money',
-    author: 'Alex Chen',
-    date: 'Apr 20, 2024',
-    readTime: '8 min read',
-    image: '/articles/computational-resources-hero.svg',
-    slug: '/category/money/passive-income-computational-resources'
+    title: 'ASO in 2025: The Complete App Store Optimization Guide',
+    excerpt: 'Master app store optimization with proven strategies that drive organic downloads and improve your app\'s visibility.',
+    category: 'ASO',
+    author: 'Michael Park',
+    date: 'Dec 5, 2024',
+    readTime: '12 min read',
+    image: '/articles/aso-guide-2025.png',
+    slug: '/articles/aso-complete-guide-2025'
   },
   {
     id: 2,
-    title: 'The Future of Artificial Intelligence in Everyday Life',
-    excerpt: 'How AI is transforming our daily interactions and what this means for human creativity and work.',
-    category: 'Technology',
-    author: 'Alex Johnson',
-    date: 'Jun 12, 2023',
-    readTime: '8 min read',
-    image: 'https://images.pexels.com/photos/8386434/pexels-photo-8386434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    slug: '/articles/future-of-ai-everyday-life'
+    title: 'GEO Strategy: How AI Search is Changing Discovery',
+    excerpt: 'Learn how generative engine optimization is reshaping how apps and products are discovered in AI-powered search results.',
+    category: 'GEO',
+    author: 'Jennifer Walsh',
+    date: 'Dec 3, 2024',
+    readTime: '9 min read',
+    image: '/articles/geo-ai-search.png',
+    slug: '/articles/geo-strategy-ai-search-discovery'
   },
   {
     id: 3,
-    title: 'Sustainable Design: Creating Products That Last',
-    excerpt: 'Exploring the principles behind sustainable product design and the companies leading the change.',
-    category: 'Design',
-    author: 'Maya Rodriguez',
-    date: 'May 28, 2023',
-    readTime: '6 min read',
-    image: 'https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    slug: '/articles/sustainable-design-products-that-last'
+    title: 'Keyword Research for Apps: Finding High-Intent Search Terms',
+    excerpt: 'Discover the best tools and techniques for finding keywords that drive qualified users to your app listing.',
+    category: 'Keywords',
+    author: 'Daniel Roberts',
+    date: 'Nov 28, 2024',
+    readTime: '8 min read',
+    image: '/articles/keyword-research.png',
+    slug: '/articles/keyword-research-apps-guide'
   },
   {
     id: 4,
-    title: 'The Revival of Local Community Spaces',
-    excerpt: 'How urban planning is shifting to prioritize community gathering spaces in the digital age.',
-    category: 'Culture',
-    author: 'Thomas Wright',
-    date: 'Jun 5, 2023',
-    readTime: '5 min read',
-    image: 'https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
-    slug: '/articles/revival-local-community-spaces'
+    title: 'A/B Testing App Store Listings: What Actually Moves the Needle',
+    excerpt: 'Learn which elements of your app store listing to test first and how to measure the true impact on conversion rates.',
+    category: 'Conversion',
+    author: 'Lisa Anderson',
+    date: 'Nov 25, 2024',
+    readTime: '7 min read',
+    image: '/articles/ab-testing-apps.png',
+    slug: '/articles/ab-testing-app-store-listings'
   }
 ];
 

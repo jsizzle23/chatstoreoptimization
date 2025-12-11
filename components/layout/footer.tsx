@@ -8,10 +8,10 @@ const Footer = () => {
 
   const quickLinks = [
     { name: 'All Articles', href: '/articles' },
+    { name: 'How We Optimize', href: '/how-we-optimize' },
     { name: 'About Us', href: '/about' },
     { name: 'Contact', href: '/contact' },
     { name: 'Privacy Policy', href: '/privacy' },
-    { name: 'Terms of Service', href: '/terms' },
   ];
 
   const popularGuides = [
@@ -92,9 +92,20 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 pt-8 border-t flex flex-col md:flex-row items-center justify-between">
-          <p className="text-sm text-muted-foreground">
-            © {currentYear} Chat Store Optimization. All rights reserved.
-          </p>
+          <div className="flex flex-col md:flex-row items-center gap-2 md:gap-4">
+            <p className="text-sm text-muted-foreground">
+              © {currentYear} Chat Store Optimization. All rights reserved.
+            </p>
+            <span className="hidden md:inline text-muted-foreground">•</span>
+            <a
+              href="https://www.leapwave.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-muted-foreground hover:text-blue-600 transition-colors"
+            >
+              Powered by Leapwave AI
+            </a>
+          </div>
           <div className="flex items-center gap-2 mt-4 md:mt-0 text-sm text-muted-foreground">
             <Rocket className="h-4 w-4" />
             <span>Optimize once, grow forever.</span>

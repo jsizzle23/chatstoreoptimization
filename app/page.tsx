@@ -1,9 +1,20 @@
+import { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, Clock, Smartphone, Zap, Search, TrendingUp, Bot, CheckCircle2, Star, Globe, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Newsletter from '@/components/home/newsletter';
+
+export const metadata: Metadata = {
+  title: 'Chat Store Optimization | ASO, SEO & GEO Strategies',
+  description: 'Master App Store Optimization with proven strategies. Boost your app visibility, downloads, and conversions with expert ASO, SEO, and GEO guides.',
+  openGraph: {
+    title: 'Chat Store Optimization | ASO, SEO & GEO Strategies',
+    description: 'Master App Store Optimization with proven strategies. Boost your app visibility, downloads, and conversions.',
+    type: 'website',
+  },
+};
 
 const benefits = [
   {

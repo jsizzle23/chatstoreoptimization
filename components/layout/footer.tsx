@@ -103,7 +103,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="text-sm text-muted-foreground hover:text-blue-600 transition-colors"
             >
-              Powered by Leapwave AI
+              AI Content Optimization by Leapwave
             </a>
           </div>
           <div className="flex items-center gap-2 mt-4 md:mt-0 text-sm text-muted-foreground">

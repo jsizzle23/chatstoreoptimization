@@ -111,7 +111,7 @@ export default function HowWeOptimizePage() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Learn About Leapwave AI
+                  Explore AI Content Optimization
                   <ExternalLink className="ml-2 h-4 w-4" />
                 </a>
               </Button>
@@ -229,7 +229,7 @@ export default function HowWeOptimizePage() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Visit Leapwave AI
+                    Try AI-Powered ASO Optimization
                     <ExternalLink className="ml-2 h-4 w-4" />
                   </a>
                 </Button>
@@ -301,7 +301,7 @@ export default function HowWeOptimizePage() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Get Started with Leapwave
+                  Start AI Content Optimization
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </a>
               </Button>

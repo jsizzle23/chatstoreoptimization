@@ -1,9 +1,20 @@
+import { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { ArrowRight, Target, Lightbulb, Users, TrendingUp } from 'lucide-react';
 import Newsletter from '@/components/home/newsletter';
+
+export const metadata: Metadata = {
+  title: 'About Us | Chat Store Optimization',
+  description: 'Learn about Chat Store Optimization and our mission to help app developers and marketers maximize their app visibility. Discover our ASO, SEO, and GEO expertise.',
+  openGraph: {
+    title: 'About Us | Chat Store Optimization',
+    description: 'Learn about Chat Store Optimization and our mission to help app developers maximize their app visibility.',
+    type: 'website',
+  },
+};
 
 const values = [
   {

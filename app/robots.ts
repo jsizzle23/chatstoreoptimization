@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/', '/private/'],
     },
-    sitemap: 'https://chatstoreoptimization.com/sitemap.xml',
+    sitemap: 'https://greenrewardshub.com/sitemap.xml',
   }
 }

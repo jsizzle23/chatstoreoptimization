@@ -49,10 +49,14 @@ export default function ContactPage() {
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-    setTimeout(() => {
-      setIsSubmitted(true);
-    }, 1000);
+    const inquiryPrefix = `[${values.inquiry.toUpperCase()}]`;
+    const subject = encodeURIComponent(`${inquiryPrefix} ${values.subject}`);
+    const body = encodeURIComponent(
+      `Name: ${values.name}\nEmail: ${values.email}\nInquiry Type: ${values.inquiry}\n\nMessage:\n${values.message}`
+    );
+
+    window.location.href = `mailto:justin@leapwave.io?subject=${subject}&body=${body}`;
+    setIsSubmitted(true);
   }
 
   return (
@@ -93,7 +97,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-medium mb-1">Email Us</h3>
-                    <p className="text-muted-foreground">hello@makemoneysavetime.com</p>
+                    <p className="text-muted-foreground">justin@leapwave.io</p>
                   </div>
                 </div>
 

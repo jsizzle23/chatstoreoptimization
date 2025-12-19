@@ -1,99 +1,99 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
-import { ArrowRight, Clock, Smartphone, Zap, Search, TrendingUp, Bot, CheckCircle2, Star, Globe, Sparkles } from 'lucide-react';
+import { ArrowRight, Clock, Leaf, Zap, Recycle, Sun, Droplets, CheckCircle2, Star, Sprout, TreeDeciduous } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import Newsletter from '@/components/home/newsletter';
 
 export const metadata: Metadata = {
-  title: 'Chat Store Optimization | ASO, SEO & GEO Strategies',
-  description: 'Master App Store Optimization with proven strategies. Boost your app visibility, downloads, and conversions with expert ASO, SEO, and GEO guides.',
+  title: 'Green Rewards Hub | Sustainable Living & Eco-Friendly Product Guide',
+  description: 'Your guide to sustainable living and eco-friendly products. Expert reviews, tips, and strategies for a greener lifestyle. Discover zero waste living, renewable energy, and green product recommendations.',
   openGraph: {
-    title: 'Chat Store Optimization | ASO, SEO & GEO Strategies',
-    description: 'Master App Store Optimization with proven strategies. Boost your app visibility, downloads, and conversions.',
+    title: 'Green Rewards Hub | Sustainable Living & Eco-Friendly Product Guide',
+    description: 'Your guide to sustainable living and eco-friendly products. Expert reviews, tips, and strategies for a greener lifestyle.',
     type: 'website',
   },
 };
 
 const benefits = [
   {
-    icon: Smartphone,
-    title: 'App Store Optimization',
-    description: 'Boost your app visibility on iOS and Android stores with proven ASO strategies.',
+    icon: Leaf,
+    title: 'Green Products',
+    description: 'In-depth reviews and comparisons of eco-friendly products that actually work.',
   },
   {
-    icon: Search,
-    title: 'Search Engine Optimization',
-    description: 'Rank higher on Google and drive organic traffic with expert SEO techniques.',
+    icon: Recycle,
+    title: 'Zero Waste Living',
+    description: 'Practical guides to reduce waste and live more sustainably every day.',
   },
   {
-    icon: Bot,
-    title: 'Generative Engine Optimization',
-    description: 'Get discovered by AI-powered search engines like ChatGPT, Perplexity, and Claude.',
+    icon: Sun,
+    title: 'Renewable Energy',
+    description: 'Everything you need to know about solar, wind, and clean energy solutions.',
   },
   {
-    icon: TrendingUp,
-    title: 'Growth Analytics',
-    description: 'Track your optimization efforts with data-driven insights and benchmarks.',
+    icon: Droplets,
+    title: 'Sustainable Services',
+    description: 'Find eco-conscious services from green banking to carbon offsets.',
   },
 ];
 
 const featuredGuides = [
   {
     id: 1,
-    title: 'ASO Fundamentals: Your Complete Guide',
-    excerpt: 'Master the essentials of App Store Optimization to increase downloads and visibility.',
-    category: 'ASO',
-    readTime: '12 min',
-    slug: '/articles/aso-fundamentals-complete-guide',
+    title: 'Zero Waste Living: Complete Beginner Guide',
+    excerpt: 'Start your zero waste journey with practical tips that actually fit your lifestyle.',
+    category: 'Zero Waste',
+    readTime: '15 min',
+    slug: '/articles/zero-waste-living-beginner-guide',
     featured: true,
   },
   {
     id: 2,
-    title: 'GEO: Optimizing for AI Search Engines',
-    excerpt: 'Learn how to make your content discoverable by ChatGPT, Perplexity, and AI assistants.',
-    category: 'GEO',
-    readTime: '10 min',
-    slug: '/articles/geo-optimizing-for-ai-search',
+    title: 'Best Sustainable Products of 2025',
+    excerpt: 'Our top picks for eco-friendly products across home, personal care, and more.',
+    category: 'Products',
+    readTime: '12 min',
+    slug: '/articles/best-sustainable-products-2025',
   },
   {
     id: 3,
-    title: 'SEO Best Practices for 2025',
-    excerpt: 'Stay ahead with the latest SEO strategies for ranking on Google and Bing.',
-    category: 'SEO',
-    readTime: '15 min',
-    slug: '/articles/seo-best-practices-2025',
+    title: 'Home Solar: Is It Worth It?',
+    excerpt: 'A complete breakdown of costs, savings, and environmental benefits of going solar.',
+    category: 'Energy',
+    readTime: '18 min',
+    slug: '/articles/home-solar-worth-it',
   },
   {
     id: 4,
-    title: 'App Store Screenshot Optimization',
-    excerpt: 'Design screenshots that convert browsers into downloaders with A/B testing.',
-    category: 'ASO',
-    readTime: '8 min',
-    slug: '/articles/app-store-screenshot-optimization',
+    title: 'Eco-Friendly Home Cleaning Guide',
+    excerpt: 'Ditch toxic chemicals with these natural, effective cleaning solutions.',
+    category: 'Home',
+    readTime: '10 min',
+    slug: '/articles/eco-friendly-home-cleaning',
   },
 ];
 
 const stats = [
-  { value: '50K+', label: 'Apps Optimized' },
-  { value: '300+', label: 'Expert Guides' },
-  { value: '2M+', label: 'Downloads Driven' },
-  { value: '4.8/5', label: 'Reader Rating' },
+  { value: '15K+', label: 'Green Enthusiasts' },
+  { value: '250+', label: 'Product Reviews' },
+  { value: '100+', label: 'Sustainability Guides' },
+  { value: '4.9/5', label: 'Reader Rating' },
 ];
 
 const whatYouLearn = [
   {
-    title: "App Store Optimization",
-    description: "Keyword research, metadata optimization, screenshot design, and review management to maximize app store rankings.",
+    title: "Sustainable Product Reviews",
+    description: "Unbiased reviews of eco-friendly products so you can make informed choices that help the planet.",
   },
   {
-    title: "Search Engine Optimization",
-    description: "On-page SEO, technical optimization, link building, and content strategies for higher Google rankings.",
+    title: "Green Living Strategies",
+    description: "Practical tips for reducing your carbon footprint without sacrificing convenience or comfort.",
   },
   {
-    title: "Generative Engine Optimization",
-    description: "Structure your content for AI discovery, optimize for LLM citations, and appear in AI-generated answers.",
+    title: "Eco-Friendly Services",
+    description: "Discover green alternatives for banking, energy, transportation, and everyday services.",
   },
 ];
 
@@ -102,29 +102,29 @@ export default function Home() {
     <div className="flex flex-col">
       {/* Hero Section */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-500/5 via-background to-cyan-500/5" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-500/10 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-br from-green-500/5 via-background to-emerald-500/5" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-green-500/10 via-transparent to-transparent" />
 
         <div className="container mx-auto px-4 py-16 sm:py-24 lg:py-32 relative">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-500/10 text-blue-600 text-sm font-medium">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-emerald-500/10 text-emerald-600 text-sm font-medium">
                 <Zap className="h-4 w-4" />
-                <span>ASO + SEO + GEO Strategies</span>
+                <span>Sustainable Living Made Easy</span>
               </div>
 
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold font-display leading-[1.1] tracking-tight">
-                Master <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">Search</span> Optimization
+                Discover <span className="bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent">Green</span> Products
                 <br />
-                Across <span className="bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">Every</span> Platform
+                & <span className="bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent">Eco</span>-Friendly Living
               </h1>
 
               <p className="text-xl text-muted-foreground max-w-lg">
-                From app stores to search engines to AI assistants. Learn to optimize for where your audience discovers you.
+                Expert guides on sustainable products, green services, and practical tips for living an eco-friendly lifestyle.
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="text-base h-14 px-10 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 shadow-lg shadow-blue-500/25 hover:shadow-xl hover:shadow-blue-500/30 transition-all duration-200 hover:-translate-y-0.5" asChild>
+                <Button size="lg" className="text-base h-14 px-10 bg-gradient-to-r from-emerald-600 to-teal-500 hover:from-emerald-700 hover:to-teal-600 shadow-lg shadow-emerald-500/25 hover:shadow-xl hover:shadow-emerald-500/30 transition-all duration-200 hover:-translate-y-0.5" asChild>
                   <Link href="/articles">
                     Start Learning Free
                     <ArrowRight className="ml-2 h-5 w-5" />
@@ -140,32 +140,32 @@ export default function Home() {
               <div className="flex items-center gap-4 pt-4">
                 <div className="flex gap-1">
                   {[1, 2, 3, 4, 5].map((i) => (
-                    <Star key={i} className="w-5 h-5 fill-blue-500 text-blue-500" />
+                    <Star key={i} className="w-5 h-5 fill-emerald-500 text-emerald-500" />
                   ))}
                 </div>
                 <div className="text-sm">
-                  <span className="font-semibold">4.8/5</span>
-                  <span className="text-muted-foreground"> from 5,000+ readers</span>
+                  <span className="font-semibold">4.9/5</span>
+                  <span className="text-muted-foreground"> from 2,000+ readers</span>
                 </div>
               </div>
             </div>
 
             <div className="relative">
-              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center">
+              <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-green-600 to-emerald-500 flex items-center justify-center">
                 <div className="text-center text-white p-8">
                   <div className="flex justify-center gap-4 mb-6">
                     <div className="p-4 bg-white/20 rounded-xl">
-                      <Smartphone className="h-10 w-10" />
+                      <Leaf className="h-10 w-10" />
                     </div>
                     <div className="p-4 bg-white/20 rounded-xl">
-                      <Search className="h-10 w-10" />
+                      <Recycle className="h-10 w-10" />
                     </div>
                     <div className="p-4 bg-white/20 rounded-xl">
-                      <Bot className="h-10 w-10" />
+                      <TreeDeciduous className="h-10 w-10" />
                     </div>
                   </div>
-                  <h3 className="text-2xl font-bold mb-2">ASO + SEO + GEO</h3>
-                  <p className="text-white/80">Complete optimization coverage</p>
+                  <h3 className="text-2xl font-bold mb-2">Green + Sustainable</h3>
+                  <p className="text-white/80">Live better, impact less</p>
                 </div>
               </div>
             </div>
@@ -179,7 +179,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat) => (
               <div key={stat.label} className="text-center">
-                <p className="text-3xl sm:text-4xl font-bold text-blue-600">{stat.value}</p>
+                <p className="text-3xl sm:text-4xl font-bold text-emerald-600">{stat.value}</p>
                 <p className="text-sm text-muted-foreground mt-1">{stat.label}</p>
               </div>
             ))}
@@ -192,10 +192,10 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold font-display mb-4">
-              Three Pillars of Discovery
+              Your Guide to Green Living
             </h2>
             <p className="text-muted-foreground text-lg">
-              Master ASO, SEO, and GEO to ensure your content gets found everywhere people search.
+              Everything you need to make sustainable choices and reduce your environmental impact.
             </p>
           </div>
 
@@ -203,8 +203,8 @@ export default function Home() {
             {benefits.map((benefit) => (
               <Card key={benefit.title} className="border-0 shadow-sm hover:shadow-md transition-shadow">
                 <CardContent className="p-6">
-                  <div className="p-3 rounded-xl bg-blue-500/10 w-fit mb-4">
-                    <benefit.icon className="h-6 w-6 text-blue-600" />
+                  <div className="p-3 rounded-xl bg-emerald-500/10 w-fit mb-4">
+                    <benefit.icon className="h-6 w-6 text-emerald-600" />
                   </div>
                   <h3 className="text-xl font-semibold mb-2">{benefit.title}</h3>
                   <p className="text-muted-foreground">{benefit.description}</p>
@@ -224,7 +224,7 @@ export default function Home() {
                 Featured Guides
               </h2>
               <p className="text-muted-foreground">
-                Start optimizing for better visibility today.
+                Start your sustainable journey today.
               </p>
             </div>
             <Button variant="outline" asChild>
@@ -243,7 +243,7 @@ export default function Home() {
                     <div className="flex items-center gap-2 mb-4">
                       <Badge
                         variant={guide.featured ? "default" : "secondary"}
-                        className={`text-xs ${guide.category === 'ASO' ? 'bg-blue-600' : guide.category === 'SEO' ? 'bg-green-600' : 'bg-purple-600'}`}
+                        className={`text-xs ${guide.category === 'Zero Waste' ? 'bg-green-600' : guide.category === 'Products' ? 'bg-emerald-600' : guide.category === 'Energy' ? 'bg-teal-600' : 'bg-lime-600'}`}
                       >
                         {guide.category}
                       </Badge>
@@ -252,13 +252,13 @@ export default function Home() {
                         {guide.readTime}
                       </span>
                     </div>
-                    <h3 className="text-lg font-semibold mb-2 group-hover:text-blue-600 transition-colors line-clamp-2">
+                    <h3 className="text-lg font-semibold mb-2 group-hover:text-emerald-600 transition-colors line-clamp-2">
                       {guide.title}
                     </h3>
                     <p className="text-muted-foreground text-sm line-clamp-2">
                       {guide.excerpt}
                     </p>
-                    <div className="mt-4 text-blue-600 text-sm font-medium flex items-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div className="mt-4 text-emerald-600 text-sm font-medium flex items-center opacity-0 group-hover:opacity-100 transition-opacity">
                       Read Guide
                       <ArrowRight className="ml-1 h-4 w-4" />
                     </div>
@@ -278,7 +278,7 @@ export default function Home() {
               What You&apos;ll Learn
             </h2>
             <p className="text-muted-foreground text-lg">
-              Comprehensive strategies for every type of search optimization.
+              Practical knowledge for living sustainably without the overwhelm.
             </p>
           </div>
 
@@ -286,8 +286,8 @@ export default function Home() {
             {whatYouLearn.map((item, index) => (
               <Card key={index} className="border-0 shadow-sm">
                 <CardContent className="p-6">
-                  <div className="p-3 rounded-xl bg-blue-500/10 w-fit mb-4">
-                    <CheckCircle2 className="h-6 w-6 text-blue-600" />
+                  <div className="p-3 rounded-xl bg-emerald-500/10 w-fit mb-4">
+                    <CheckCircle2 className="h-6 w-6 text-emerald-600" />
                   </div>
                   <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
                   <p className="text-muted-foreground">{item.description}</p>
@@ -299,14 +299,14 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 sm:py-24 bg-blue-600 text-white">
+      <section className="py-16 sm:py-24 bg-gradient-to-r from-emerald-600 to-teal-500 text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl sm:text-4xl font-bold font-display mb-6">
-              Ready to Get Discovered?
+              Ready to Live Greener?
             </h2>
             <p className="text-xl mb-8 text-white/90">
-              Join thousands of marketers mastering ASO, SEO, and GEO to drive organic growth.
+              Join thousands making sustainable choices every day with our expert guides and reviews.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" className="h-12 px-8 text-base" asChild>
@@ -323,11 +323,11 @@ export default function Home() {
               </span>
               <span className="flex items-center gap-2">
                 <CheckCircle2 className="h-4 w-4" />
-                Expert Strategies
+                Expert Reviews
               </span>
               <span className="flex items-center gap-2">
                 <CheckCircle2 className="h-4 w-4" />
-                Actionable Tips
+                Practical Tips
               </span>
             </div>
           </div>

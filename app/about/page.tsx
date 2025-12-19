@@ -7,11 +7,11 @@ import { ArrowRight, Target, Lightbulb, Users, TrendingUp } from 'lucide-react';
 import Newsletter from '@/components/home/newsletter';
 
 export const metadata: Metadata = {
-  title: 'About Us | Chat Store Optimization',
-  description: 'Learn about Chat Store Optimization and our mission to help app developers and marketers maximize their app visibility. Discover our ASO, SEO, and GEO expertise.',
+  title: 'About Us | Green Rewards Hub',
+  description: 'Learn about Green Rewards Hub and our mission to help people live more sustainably. Discover our commitment to providing actionable eco-friendly advice and product recommendations.',
   openGraph: {
-    title: 'About Us | Chat Store Optimization',
-    description: 'Learn about Chat Store Optimization and our mission to help app developers maximize their app visibility.',
+    title: 'About Us | Green Rewards Hub',
+    description: 'Learn about Green Rewards Hub and our mission to help people live more sustainably.',
     type: 'website',
   },
 };
